@@ -44,3 +44,6 @@ dt{color:var(--ink)}dd{margin:0}
 .entry p{margin:.25rem 0;color:var(--muted)}
 footer.site{padding:2rem 5vw;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 @media (prefers-reduced-motion:reduce){.track{transition:none}}
+.has-sub{position:relative}
+.has-sub ul{display:none;position:absolute;top:100%;left:-.75rem;flex-direction:column;gap:.25rem;background:var(--bg);border:1px solid var(--line);padding:.75rem;min-width:12rem;z-index:5}
+.has-sub:hover ul,.has-sub:focus-within ul{display:flex}
