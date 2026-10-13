@@ -8,6 +8,7 @@ const collections = [
   { id: 'graduation', title: 'graduation', blurb: '' },
   { id: 'nature', title: 'nature & still life', blurb: '' },
   { id: 'sports', title: 'sports', blurb: '' },
+  { id: 'etc', title: 'etc.', blurb: 'fun & miscellaneous' },
 ];
 
 // the photos in the big slider at the top of the photography page (up to 6, use their ids)
@@ -16,21 +17,24 @@ const featured = ['s1', 's2', 's3', 's4', 's5', 's6'];
 // photos. required: id (unique, no spaces), file, photographer, collections
 // optional: title, camera, date, location, description, alt (short text for screen readers)
 const photos = [
-  { id: 's1', file: 'images/placeholder.svg', title: 'sample photo', photographer: 'sophia', camera: 'camera name', date: '2026-05-10', location: 'st. louis, mo', description: 'write about the photo here.', collections: ['picks', 'graduation'] },
-  { id: 's2', file: 'images/placeholder-tall.svg', photographer: 'sophia', date: '2026-04-02', collections: ['picks', 'nature'] },
-  { id: 's3', file: 'images/placeholder-square.svg', photographer: 'sophia', collections: ['picks', 'sports'] },
-  { id: 's4', file: 'images/placeholder.svg', photographer: 'sophia', date: '2026-05-11', collections: ['graduation'] },
-  { id: 's5', file: 'images/placeholder-tall.svg', photographer: 'sophia', date: '2026-03-20', collections: ['nature'] },
-  { id: 's6', file: 'images/placeholder-square.svg', photographer: 'sophia', date: '2026-02-14', collections: ['sports'] },
-  { id: 's7', file: 'images/placeholder.svg', photographer: 'sophia', collections: ['nature'] },
-  { id: 's8', file: 'images/placeholder-tall.svg', photographer: 'sophia', date: '2026-05-09', collections: ['graduation'] },
-  { id: 's9', file: 'images/placeholder.svg', photographer: 'sophia', date: '2026-01-30', collections: ['sports'] },
+  // id: 's1', file: 'file.jpg', title: 'title', photographer: 'me', camera: 'cam', date: 'date', location: 'place', description: 'photo blah blah', collections: ['picks', 'graduation']
+  { id: 's1', file: 'central-park.jpg', title: 'central park scene', photographer: 'sophia martin', camera: 'digital camera', date: 'july 2026', location: 'new york, ny', collections: ['nature'] },
+  { id: 's2', file: 'forest.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['picks', 'nature'] },
+  { id: 's3', file: 'kiss.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'july 2026',collections: ['picks', 'etc'] },
+  { id: 's4', file: 'leaves.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['nature'] },
+  { id: 's5', file: 'sky-sea.jpeg', photographer: 'sophia martin', date: 'june 2026', collections: ['nature'] },
+  { id: 's6', file: 'tall-trees.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['nature'] },
+  { id: 's7', file: 'xc-country.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['picks', 'sports'] },
+  { id: 's8', file: 'xc-go.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
+  { id: 's9', file: 'xc-line.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
+  { id: 's10', file: 'xc-pond.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
+  { id: 's11', file: 'xc-team.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
 ];
 
 // art. required: id, file, title, artist
 // optional: medium, size, date, description, alt
 const art = [
-  { id: 'a1', file: 'images/placeholder-tall.svg', title: 'sample piece', artist: 'sophia', medium: 'oil on canvas', size: '18 x 24 in', date: '2026-03-01', description: 'write about the piece here.' },
-  { id: 'a2', file: 'images/placeholder.svg', title: 'another piece', artist: 'sophia' },
-  { id: 'a3', file: 'images/placeholder-square.svg', title: 'a third piece', artist: 'sophia', medium: 'ink' },
+  // id: 'a3', file: 'images/placeholder-square.svg', title: 'a third piece', artist: 'sophia martin', medium: 'ink' size: '18 x 24 in', date: '2026-03-01', description: 'write about the piece here.'
+  { id: 'butterfly', file: 'butterfly.JPG', title: 'butterfly sketch', artist: 'sophia martin', medium: 'pencil sketch translated to digital', date: 'september 2026'},
+  { id: 'flowers1', file: 'flowers1.jpg', title: 'UNDERGRAD, PRESERVED', artist: 'sophia martin', medium: "dried flowers", size: '8 x 10 in', date: 'september 2026'},
 ];
