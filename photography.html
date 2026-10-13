@@ -6,12 +6,12 @@
 <title>photography</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="photography">
 <header class="site">
 <a class="logo" href="index.html">sophia</a>
 <nav aria-label="main"><ul>
 <li><a href="about.html">about me</a></li>
-<li class="has-sub"><a href="photography.html" aria-current="page">photography</a><ul><li><a href="photography.html#picks">my picks</a></li><li><a href="photography.html#all">all</a></li><li><a href="photography.html#graduation">graduation</a></li><li><a href="photography.html#nature">nature & still life</a></li><li><a href="photography.html#sports">sports</a></li></ul></li>
+<li><a href="photography.html" aria-current="page">photography</a></li>
 <li><a href="writing.html">writing</a></li>
 <li><a href="social-media.html">social media</a></li>
 <li><a href="art.html">art</a></li>
@@ -20,26 +20,17 @@
 </header>
 <main>
 <h1>photography</h1>
-<div class="filters">
-<button data-filter="picks">my picks</button>
-<button data-filter="all">all</button>
-<button data-filter="graduation">graduation</button>
-<button data-filter="nature">nature & still life</button>
-<button data-filter="sports">sports</button>
+<p class="lead" id="subtitle">write a short subtitle here.</p>
+<div class="slider" role="region" aria-roledescription="carousel" aria-label="featured photos">
+<div class="track" id="track"></div>
+<button class="prev" id="prev" aria-label="previous photo">&lsaquo;</button>
+<button class="next" id="next" aria-label="next photo">&rsaquo;</button>
 </div>
-<!-- how to add a photo: copy one <figure> line, change the src, alt text, caption, and tags.
-     tags: "picks" shows it under my picks. add any category tag too: graduation, nature, sports.
-     to add a new category: add a button above with data-filter="newtag" and use "newtag" in the photos' tags. -->
-<div class="gallery">
-<figure data-tags="picks graduation"><img src="images/placeholder.svg" alt="describe this photo" loading="lazy"><figcaption>graduation photo (also in my picks)</figcaption></figure>
-<figure data-tags="picks nature"><img src="images/placeholder.svg" alt="describe this photo" loading="lazy"><figcaption>nature photo (also in my picks)</figcaption></figure>
-<figure data-tags="picks sports"><img src="images/placeholder.svg" alt="describe this photo" loading="lazy"><figcaption>sports photo (also in my picks)</figcaption></figure>
-<figure data-tags="graduation"><img src="images/placeholder.svg" alt="describe this photo" loading="lazy"><figcaption>graduation photo</figcaption></figure>
-<figure data-tags="nature"><img src="images/placeholder.svg" alt="describe this photo" loading="lazy"><figcaption>still life photo</figcaption></figure>
-<figure data-tags="sports"><img src="images/placeholder.svg" alt="describe this photo" loading="lazy"><figcaption>sports photo</figcaption></figure>
-</div>
+<div id="rows"></div>
+<p><a href="all-photos.html">see all photos</a></p>
 </main>
 <footer class="site">made by sophia</footer>
-<script src="js/photography.js"></script>
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>all photos</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="all-photos">
+<header class="site">
+<a class="logo" href="index.html">sophia</a>
+<nav aria-label="main"><ul>
+<li><a href="about.html">about me</a></li>
+<li><a href="photography.html" aria-current="page">photography</a></li>
+<li><a href="writing.html">writing</a></li>
+<li><a href="social-media.html">social media</a></li>
+<li><a href="art.html">art</a></li>
+<li><a href="just-for-fun.html">just for fun</a></li>
+</ul></nav>
+</header>
+<main>
+<h1>all photos</h1>
+<div class="controls">
+<label>show <select id="filter"></select></label>
+<label>sort by <select id="sort"><option value="newest">newest first</option><option value="oldest">oldest first</option><option value="title">title</option></select></label>
+</div>
+<div class="justified" id="gallery"></div>
+</main>
+<footer class="site">made by sophia</footer>
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
