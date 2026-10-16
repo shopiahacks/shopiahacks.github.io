@@ -5,14 +5,14 @@
 
 const collections = [
   { id: 'picks', title: 'my picks', blurb: 'a few favorites.' },
-  { id: 'graduation', title: 'graduation', blurb: '' },
+  { id: 'grad', title: 'graduation', blurb: '' },
   { id: 'nature', title: 'nature & still life', blurb: '' },
   { id: 'sports', title: 'sports', blurb: '' },
   { id: 'etc', title: 'etc.', blurb: 'fun & miscellaneous' },
 ];
 
 // the photos in the big slider at the top of the photography page (up to 6, use their ids)
-const featured = ['s1', 's2', 's3', 's4', 's5', 's6'];
+const featured = ['s12', 's2', 's8', 's4', 's14', 's6'];
 
 // photos. required: id (unique, no spaces), file, photographer, collections
 // optional: title, camera, date, location, description, alt (short text for screen readers)
@@ -29,6 +29,28 @@ const photos = [
   { id: 's9', file: 'xc-line.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
   { id: 's10', file: 'xc-pond.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
   { id: 's11', file: 'xc-team.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'september 2026', collections: ['sports'] },
+  { id: 's12', file: 'as6.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad', 'picks'] },
+  { id: 's13', file: 'as7.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's14', file: 'as25.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's15', file: 'as4.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's16', file: 'as8.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's17', file: 'as26.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's18', file: 'as16.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's19', file: 'as5.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's20', file: 'as9.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's21', file: 'as17.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's22', file: 'as3.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's23', file: 'as1.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's24', file: 'as19.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's25', file: 'as27.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's26', file: 'as14.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's27', file: 'as23.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's28', file: 'as10.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's29', file: 'as24.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's30', file: 'as20.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's31', file: 'as13.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  { id: 's32', file: 'as2.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
+  //{ id: 's33', file: 'as22.jpg', photographer: 'sophia martin', camera: 'Canon EOS Rebel 7', date: 'october 2026', location: 'richmond, va', collections: ['grad'] },
 ];
 
 // art. required: id, file, title, artist
