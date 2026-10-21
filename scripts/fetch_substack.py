@@ -1,5 +1,6 @@
 """Saves the latest posts from the Substack RSS feed to data/substack.json (run by the GitHub Action)."""
 import json
+import os
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -29,6 +30,7 @@ if __name__ == "__main__":
     posts = parse(urllib.request.urlopen(req, timeout=30).read())
     if not posts:
         raise SystemExit("feed had no posts; leaving the existing file alone")
+    os.makedirs("data", exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2, ensure_ascii=False)
         f.write("\n")
