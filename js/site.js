@@ -172,3 +172,15 @@ if (page === 'piece') {
   detailPage(a, 'art', a ? [['artist', a.artist], ['medium', a.medium], ['size', a.size], ['date', a.date && fmt(a.date)]] : [], 'art.html', 'art');
 }
 if (page === 'art') justified($('#gallery'), art, 'art');
+
+if (page === 'writing') {
+  const POSTS = 3; // how many recent posts to show
+  fetch('data/substack.json')
+    .then(r => r.json())
+    .then(posts => {
+      $('#posts').innerHTML = posts.slice(0, POSTS).map(p =>
+        `<div class="entry"><h2><a href="${esc(p.link)}">${esc(p.title)}</a></h2>${p.description ? `<p>${esc(p.description)}</p>` : ''}<p>${esc(fmt(p.date))}</p></div>`
+      ).join('');
+    })
+    .catch(() => { $('#posts').textContent = 'posts are unavailable right now.'; });
+}

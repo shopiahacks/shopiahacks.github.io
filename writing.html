@@ -5,28 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>writing</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
 </head>
-<body data-page="">
-<header class="site">
-<a class="logo" href="index.html">sophia</a>
-<nav aria-label="main"><ul>
-<li><a href="about.html">about me</a></li>
-<li><a href="photography.html">photography</a></li>
-<li><a href="writing.html" aria-current="page">writing</a></li>
-<li><a href="social-media.html">social media</a></li>
-<li><a href="art.html">art</a></li>
-<li><a href="just-for-fun.html">just for fun</a></li>
-</ul></nav>
-</header>
+<body data-page="writing">
+<site-header></site-header>
 <main>
 <h1>writing</h1>
 <p class="lead">a few pieces i'm proud of. more coming soon on my substack.</p>
 <!-- copy an entry block for each piece. replace the link with the post's url. -->
-<div class="entry"><h2><a href="https://shopiashares.substack.com/p/love-is-like-a-butterfly">Love Is Like a Butterfly</a></h2><p>Dolly Parton's life lessons on love & loss</p></div>
+<!--<div class="entry"><h2><a href="https://shopiashares.substack.com/p/love-is-like-a-butterfly">Love Is Like a Butterfly</a></h2><p>Dolly Parton's life lessons on love & loss</p></div>
 <div class="entry"><h2><a href="https://shopiashares.substack.com/p/presidential-paradoxes">Presidential Paradoxes</a></h2><p>notes on the US-Israeli strikes on Iran this weekend</p></div>
+-->
+<div id="posts"></div>
 <p><a href="https://substack.com/@shopiashares">read everything on my substack</a></p>
 </main>
-<footer class="site">made by sophia</footer>
-<script src="js/nav.js"></script>
+<site-footer></site-footer>
+<script src="js/site.js"></script>
 </body>
 </html>
