@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 PUB = "https://shopiashares.substack.com"
-OUT = "data/substack.json"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir, "data", "substack.json")
 LIMIT = 12  # how many recent posts to keep; the website decides how many to show
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
@@ -77,7 +77,7 @@ def main():
     else:
         print("::error::" + " | ".join(errors))  # shows up as a red annotation on the run
         sys.exit(1)
-    os.makedirs("data", exist_ok=True)
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2, ensure_ascii=False)
         f.write("\n")
